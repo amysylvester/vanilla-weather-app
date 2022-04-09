@@ -1,0 +1,104 @@
+body {
+  background: linear-gradient(
+    180.3deg,
+    rgb(221, 221, 221) 5.5%,
+    rgb(110, 136, 161) 90.2%
+  );
+  display: block;
+  font-family: "Source Sans Pro", sans-serif;
+  margin: 15px;
+}
+
+header,
+h1,
+input,
+div .logo-image,
+div .today .temp,
+.container {
+  margin: auto;
+}
+
+header,
+footer,
+div .weekly-forecast {
+  text-align: center;
+}
+
+header {
+  padding: 0 0 10px 0;
+}
+
+h1 {
+  font-size: 75px;
+  max-width: 450px;
+  padding-bottom: 25px;
+}
+
+input {
+  border: 0;
+  border-radius: 3px;
+  font-size: 22px;
+  padding: 10px;
+  width: 90%;
+}
+
+button {
+  border: 0;
+  border-radius: 3px;
+  background-color: #6e88a1;
+  box-shadow: 2px 5px 5px #92a4b5;
+  color: white;
+  margin: 10px;
+  padding: 5px 10px;
+}
+
+h2 {
+  font-size: 50px;
+  padding: 18px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+footer {
+  color: #445566;
+  font-size: small;
+  padding: 20px;
+}
+
+div .today-weather {
+  width: 45%;
+  margin: auto;
+  text-align: center;
+}
+
+div .today .temp {
+  width: 55%;
+}
+
+.container {
+  border-radius: 10px;
+  padding: 30px;
+  max-width: 750px;
+}
+
+.eye {
+  max-width: 100%;
+}
+
+.sky {
+  font-size: 115px;
+}
+
+.future-weather-icons {
+  padding: 30px;
+}
+.card-text {
+  font-size: 27px;
+  color: #212529;
+}
+
+.conversion {
+  font-size: small;
+}
