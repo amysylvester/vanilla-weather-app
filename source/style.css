@@ -96,6 +96,10 @@ div .today .temp {
   padding: 10px 0px 0px 0px;
 }
 
+#description {
+  text-transform: capitalize;
+}
+
 .temp-unit {
   font-size: 15px;
   position: relative;

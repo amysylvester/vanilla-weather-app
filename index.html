@@ -37,12 +37,12 @@
             </div>
           </div>
         </h1>
-        <form id="enter-city-form">
-          <input placeholder="Enter a City" id="city-input" type="text" />
+        <form class="enter-city-form">
+          <input placeholder="Enter a City" class="city-input" type="text" />
         </form>
-        <button id="current-location">Current Location</button>
-        <h2 class="display-city"></h2>
-        <h3>Updated: <span id="time"></span></h3>
+        <button class="current-location">Current Location</button>
+        <h2 id="city"></h2>
+        <h3><span id="time"></span></h3>
       </header>
 
       <div class="today">
@@ -55,13 +55,13 @@
               <div class="card-body">
                 <h2 class="card-title">
                   TODAY
-                  <br /><span class="today-temp"></span>
+                  <br /><span id="temperature"></span>
                   <span class="temp-unit"> °C | °F</span>
                   <div class="today-weather-elements">
                     <span id="description">Clear</span><br />
                     Precipitation: <span id="precipitation">0%</span><br />
-                    Humidity: <span id="humidity"></span><br />
-                    Wind: <span id="wind"></span>
+                    Humidity: <span id="humidity"></span>%<br />
+                    Wind: <span id="wind"></span>km/h
                   </div>
                 </h2>
               </div>
