@@ -21,7 +21,7 @@
       href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Secular+One&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-    <title>Eye On The Sky</title>
+    <title>Vanilla Eye On The Sky</title>
   </head>
 
   <body>
@@ -65,7 +65,7 @@
 
       <div class="weekly-forecast">
         <div class="card-group">
-          <div class="card">
+          <div class="card" id="day-one">
             <img
               class="future-weather-icons"
               src="images/weather/icons8-clouds-50.svg"
@@ -80,7 +80,7 @@
               </p>
             </div>
           </div>
-          <div class="card">
+          <div class="card" id="day-two">
             <img
               class="future-weather-icons"
               src="images/weather/icons8-snow-50.svg"
@@ -96,7 +96,7 @@
               </p>
             </div>
           </div>
-          <div class="card">
+          <div class="card" id="day-three">
             <img
               class="future-weather-icons"
               src="images/weather/icons8-partly-cloudy-day-50.svg"
@@ -111,7 +111,7 @@
               </p>
             </div>
           </div>
-          <div class="card">
+          <div class="card" id="day-four">
             <img
               class="future-weather-icons"
               src="images/weather/icons8-rainy-weather-50.svg"
@@ -126,13 +126,28 @@
               </p>
             </div>
           </div>
+          <div class="card" id="day-five">
+            <img
+              class="future-weather-icons"
+              src="images/weather/icons8-partly-cloudy-day-50.svg"
+              card-img-top
+              alt="partly-cloudy"
+            />
+            <div class="card-body">
+              <h3 class="card-title"><strong>THU</strong></h3>
+              <p class="card-text">
+                42° <br />
+                24°
+              </p>
+            </div>
+          </div>
         </div>
       </div>
       <footer>
         Coded by Amy Sylvester<br />
-        <a href="https://github.com/amysylvester/Eye-on-the-Sky"
-          >Open-source Code</a
-        >
+        <a href="https://github.com/amysylvester/vanilla-weather-app">
+          Open-source Code
+        </a>
       </footer>
     </div>
     <script src="source/function.js"></script>
