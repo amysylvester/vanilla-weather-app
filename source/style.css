@@ -114,6 +114,17 @@ ul {
   font-size: 15px;
   position: relative;
   top: -19.5px;
+  text-decoration: none;
+}
+
+.units .active {
+  color: #212529;
+  cursor: default;
+  text-decoration: none;
+}
+
+.units .active:hover {
+  text-decoration: none;
 }
 
 .future-weather-icons {
