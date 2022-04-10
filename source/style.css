@@ -91,6 +91,11 @@ div .today .temp {
   font-size: 115px;
 }
 
+.today-weather-elements {
+  font-size: 20px;
+  padding: 10px 0px 0px 0px;
+}
+
 .future-weather-icons {
   padding: 30px;
 }
