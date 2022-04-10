@@ -14,10 +14,17 @@ let form = document.querySelector("#enter-city-form");
 form.addEventListener("submit", searchCity);
 
 function showCityTemp(response) {
+  console.log(response.data);
   document.querySelector(".display-city").innerHTML = response.data.name;
   let temperature = Math.round(response.data.main.temp);
   let displayCityTemp = document.querySelector(".today-temp");
-  displayCityTemp.innerHTML = `${temperature}°F`;
+  displayCityTemp.innerHTML = `${temperature}`;
+  let descriptionElement = document.querySelector("#description");
+  let humidityElement = document.querySelector("#humidity");
+  let windElement = document.querySelector("#wind");
+  descriptionElement.innerHTML = response.data.weather[0].description;
+  humidityElement.innerHTML = response.data.main.humidity;
+  windElement.innerHTML = Math.round(response.data.wind.speed);
 }
 
 // Bonus Current Location Button
