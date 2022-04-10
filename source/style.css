@@ -96,6 +96,12 @@ div .today .temp {
   padding: 10px 0px 0px 0px;
 }
 
+.temp-unit {
+  font-size: 15px;
+  position: relative;
+  top: -19.5px;
+}
+
 .future-weather-icons {
   padding: 30px;
 }

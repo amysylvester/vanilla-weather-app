@@ -25,7 +25,7 @@ function displayGeoTemp(response) {
   let currentCity = document.querySelector(".display-city");
   let currentTemp = document.querySelector(".today-temp");
   let temperature = Math.round(response.data.main.temp);
-  currentTemp.innerHTML = `${temperature}°F`;
+  currentTemp.innerHTML = `${temperature}`;
   currentCity.innerHTML = `${response.data.name}`;
 }
 
