@@ -50,9 +50,9 @@ footer {
 }
 
 div .today-weather {
-  width: 45%;
   margin: auto;
   text-align: center;
+  width: 45%;
 }
 
 div .today .temp {
@@ -61,8 +61,8 @@ div .today .temp {
 
 .container {
   border-radius: 10px;
-  padding: 30px;
   max-width: 750px;
+  padding: 30px;
 }
 
 .eye {
@@ -80,8 +80,11 @@ div .today .temp {
   padding: 6px 6px 4px 9px;
   width: 75%;
 }
-
+.today {
+  color: #212529;
+}
 .today-weather-elements {
+  color: #6e88a1;
   font-size: 20px;
   padding: 10px 0px 0px 0px;
 }
@@ -92,15 +95,15 @@ div .today .temp {
 
 #date {
   color: gray;
-  font-size: 15px;
+  font-size: 12px;
   float: right;
 }
 
 .units {
   font-size: 15px;
   position: relative;
-  top: -19.5px;
   text-decoration: none;
+  top: -19.5px;
 }
 
 .units .active {
@@ -116,7 +119,8 @@ div .today .temp {
 .future-weather-icons {
   padding: 30px;
 }
+
 .card-text {
-  font-size: 27px;
   color: #212529;
+  font-size: 27px;
 }
