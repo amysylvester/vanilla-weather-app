@@ -34,23 +34,13 @@ h1 {
   padding-bottom: 25px;
 }
 
-button {
-  border: 0;
-  border-radius: 3px;
-  background-color: #6e88a1;
-  box-shadow: 2px 5px 5px #92a4b5;
-  color: white;
-  margin: 10px;
-  padding: 5px 10px;
-}
-
 h2 {
   font-size: 50px;
   padding: 18px 18px 0px 18px;
 }
 
-h3 {
-  font-size: 20px;
+ul {
+  list-style: none;
 }
 
 footer {
@@ -67,10 +57,6 @@ div .today-weather {
 
 div .today .temp {
   width: 55%;
-}
-
-ul {
-  list-style: none;
 }
 
 .container {
@@ -133,8 +119,4 @@ ul {
 .card-text {
   font-size: 27px;
   color: #212529;
-}
-
-.conversion {
-  font-size: small;
 }
