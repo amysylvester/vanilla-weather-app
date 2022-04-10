@@ -1,4 +1,4 @@
-// search and display location
+// search and display location & weather
 function searchCity(event) {
   event.preventDefault();
   let searchCity = document.querySelector("#city-input");
@@ -14,7 +14,6 @@ let form = document.querySelector("#enter-city-form");
 form.addEventListener("submit", searchCity);
 
 function showCityTemp(response) {
-  console.log(response.data);
   document.querySelector(".display-city").innerHTML = response.data.name;
   let temperature = Math.round(response.data.main.temp);
   let displayCityTemp = document.querySelector(".today-temp");
@@ -54,6 +53,29 @@ let button = document.querySelector("#current-location");
 button.addEventListener("click", getCurrentLocation);
 
 // day and time
+
+function formatDate(timestamp) {
+  let date = new Date(timestamp);
+  let day = days[date.getDay()];
+  let days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+  let hours = date.getHours();
+  if (hours < 10) {
+    hours = `0${hours}`;
+  }
+  let minutes = date.getMinutes();
+  if (minutes < 10) {
+    minutes = `0${minutes}`;
+  }
+  return `Updated: {${day} ${hours}:${minutes}`;
+}
 let now = new Date();
 let days = [
   "Sunday",
@@ -76,5 +98,4 @@ if (minutes < 10) {
 }
 
 let currentTime = document.querySelector("#time");
-
 currentTime.innerHTML = `${day} | ${hours}:${minutes}`;
