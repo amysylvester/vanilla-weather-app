@@ -28,7 +28,7 @@
     <div class="container">
       <header>
         <h1>
-          <div class="row">
+          <div class="row" class="search">
             <div class="col logo-image">
               <img src="images/eye/icons8-surprise-500.svg" class="eye" />
             </div>
@@ -37,8 +37,13 @@
             </div>
           </div>
         </h1>
-        <form class="enter-city-form">
-          <input placeholder="Enter a City" class="city-input" type="text" />
+        <form id="form">
+          <input
+            class="form-control"
+            placeholder="Enter a City..."
+            type="search"
+            id="city-input"
+          />
         </form>
         <button class="current-location">Current Location</button>
         <h2 id="city"></h2>
@@ -60,7 +65,7 @@
                   <ul class="today-weather-elements">
                     <li id="description"></li>
                     <li>Precipitation: <span id="precipitation"></span>%</li>
-                    <li>Humidity:<span id="humidity"></span>%</li>
+                    <li>Humidity: <span id="humidity"></span>%</li>
                     <li>Wind: <span id="wind"></span>km/h</li>
                   </ul>
                   <em id="date"></em>
