@@ -42,7 +42,9 @@
         </form>
         <button class="current-location">Current Location</button>
         <h2 id="city"></h2>
-        <h3><span id="time"></span></h3>
+        <h3 class="local-date-time">
+          Local Time:<span id="date"></span><span id="time"></span>
+        </h3>
       </header>
 
       <div class="today">
@@ -57,12 +59,13 @@
                   TODAY
                   <br /><span id="temperature"></span>
                   <span class="temp-unit"> °C | °F</span>
-                  <div class="today-weather-elements">
-                    <span id="description">Clear</span><br />
-                    Precipitation: <span id="precipitation">0%</span><br />
-                    Humidity: <span id="humidity"></span>%<br />
-                    Wind: <span id="wind"></span>km/h
-                  </div>
+                  <ul class="today-weather-elements">
+                    <li id="description"></li>
+                    <li>Precipitation: <span id="precipitation"></span>%</li>
+                    <li>Humidity:<span id="humidity"></span>%</li>
+                    <li>Wind: <span id="wind"></span>km/h</li>
+                  </ul>
+                  <em id="updated">Updated: <span id="timestamp"></span></em>
                 </h2>
               </div>
             </div>

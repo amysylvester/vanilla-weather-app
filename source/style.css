@@ -54,11 +54,11 @@ button {
 
 h2 {
   font-size: 50px;
-  padding: 18px;
+  padding: 18px 18px 0px 18px;
 }
 
 h3 {
-  font-size: 30px;
+  font-size: 20px;
 }
 
 footer {
@@ -75,6 +75,10 @@ div .today-weather {
 
 div .today .temp {
   width: 55%;
+}
+
+ul {
+  list-style: none;
 }
 
 .container {
@@ -98,6 +102,12 @@ div .today .temp {
 
 #description {
   text-transform: capitalize;
+}
+
+#updated {
+  color: gray;
+  font-size: 15px;
+  float: right;
 }
 
 .temp-unit {
