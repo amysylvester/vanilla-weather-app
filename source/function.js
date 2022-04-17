@@ -22,6 +22,30 @@ function formatDate(timestamp) {
   return `Updated: ${day}, ${hours}:${minutes}`;
 }
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  forecastElement.innerHTML = `Forecast
+    <div class="card-group">
+      <div class="card" id="day-one">
+        <img
+          class="future-weather-icons"
+          src="images/weather/icons8-clouds-50.svg"
+          card-img-top
+          alt="clouds"
+        />
+        <div class="card-body">
+          <h3 class="card-title"><strong>SUN</strong></h3>
+          <p class="card-text">
+            36° <br />
+            11°
+          </p>
+        </div>
+      </div>
+    </div>
+    `;
+}
+
 function displayTemperature(response) {
   let cityElement = document.querySelector("#city");
   let temperatureElement = document.querySelector("#temperature");
@@ -88,3 +112,4 @@ let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
 search("");
+displayForecast();
