@@ -25,7 +25,10 @@ function formatDate(timestamp) {
 function displayForecast() {
   let forecastElement = document.querySelector("#forecast");
 
-  forecastElement.innerHTML = `Forecast
+  let forecastHTML = "";
+  forecastHTML =
+    forecastHTML +
+    `
     <div class="card-group">
       <div class="card" id="day-one">
         <img
@@ -36,14 +39,15 @@ function displayForecast() {
         />
         <div class="card-body">
           <h3 class="card-title"><strong>SUN</strong></h3>
-          <p class="card-text">
+          <div class="card-text">
             36° <br />
             11°
-          </p>
+          </div>
         </div>
       </div>
     </div>
-    `;
+  `;
+  forecastElement.innerHTML = forecastHTML;
 }
 
 function displayTemperature(response) {
