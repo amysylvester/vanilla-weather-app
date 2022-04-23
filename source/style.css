@@ -100,20 +100,10 @@ div .today .temp {
 }
 
 .units {
-  font-size: 15px;
+  font-size: 20px;
   position: relative;
   text-decoration: none;
   top: -19.5px;
-}
-
-.units .active {
-  color: #212529;
-  cursor: default;
-  text-decoration: none;
-}
-
-.units .active:hover {
-  text-decoration: none;
 }
 
 .future-weather-icons {
