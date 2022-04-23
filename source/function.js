@@ -18,8 +18,15 @@ function formatDate(timestamp) {
     "Saturday",
   ];
   let day = days[date.getDay()];
-
   return `Updated: ${day}, ${hours}:${minutes}`;
+}
+
+function formatDay(timestamp) {
+  let date = new Date(timestamp * 1000);
+  let day = date.getDay();
+  let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
+  return days[day];
 }
 
 function displayForecast(response) {
@@ -35,12 +42,16 @@ function displayForecast(response) {
       <div class="card" id="day-one"> 
         <img
           class="future-weather-icons"
-          src="https://openweathermap.org/img/wn/${forecastDay.weather[0].icon}@2x.png"
+          src="https://openweathermap.org/img/wn/${
+            forecastDay.weather[0].icon
+          }@2x.png"
           card-img-top
           alt=""
         />
         <div class="card-body">
-          <h3 class="card-title"><strong>${forecastDay.dt}</strong></h3>
+          <h3 class="card-title"><strong>${formatDay(
+            forecastDay.dt
+          )}</strong></h3>
           <div class="card-text">
             ${forecastDay.temp.max}°<br />
             ${forecastDay.temp.min}°
