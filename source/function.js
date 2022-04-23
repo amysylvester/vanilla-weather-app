@@ -35,10 +35,11 @@ function displayForecast(response) {
   let forecastElement = document.querySelector("#forecast");
 
   let forecastHTML = `<div class="card-group">`;
-  forecast.forEach(function (forecastDay) {
-    forecastHTML =
-      forecastHTML +
-      `
+  forecast.forEach(function (forecastDay, index) {
+    if (index < 6 && index > 0) {
+      forecastHTML =
+        forecastHTML +
+        `
       <div class="card" id="day-one"> 
         <img
           class="future-weather-icons"
@@ -48,18 +49,17 @@ function displayForecast(response) {
           card-img-top
           alt=""
         />
-        <div class="card-body">
-          <h3 class="card-title"><strong>${formatDay(
-            forecastDay.dt
-          )}</strong></h3>
-          <div class="card-text">
-            ${forecastDay.temp.max}°<br />
-            ${forecastDay.temp.min}°
-          </div>
+      <div class="card-body">
+      <h3 class="card-title"><strong>${formatDay(forecastDay.dt)}</strong></h3>
+        <div class="card-text">
+        ${Math.round(forecastDay.temp.max)}°<br />
+        ${Math.round(forecastDay.temp.min)}°
         </div>
-      </div>
-    </div>
-  `;
+        </div>
+        </div>
+        </div>
+        `;
+    }
   });
 
   forecastHTML = forecastHTML + `</div>`;
