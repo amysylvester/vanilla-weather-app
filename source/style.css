@@ -29,13 +29,13 @@ header {
 }
 
 h1 {
-  font-size: 75px;
-  max-width: 450px;
+  font-size: 60px;
+  max-width: 400px;
   padding-bottom: 25px;
 }
 
 h2 {
-  font-size: 50px;
+  font-size: 45px;
   padding: 18px 18px 0px 18px;
 }
 
@@ -59,6 +59,10 @@ div .today .temp {
   width: 55%;
 }
 
+h3 {
+  font-size: 20px;
+}
+
 .container {
   border-radius: 10px;
   max-width: 750px;
@@ -66,11 +70,11 @@ div .today .temp {
 }
 
 .eye {
-  max-width: 100%;
+  max-width: 92%;
 }
 
 .sky {
-  font-size: 115px;
+  font-size: 95px;
 }
 
 .form-control {
@@ -112,5 +116,9 @@ div .today .temp {
 
 .card-text {
   color: #212529;
-  font-size: 27px;
+  font-size: 20px;
+}
+
+#forecast-min {
+  color: #6e88a1;
 }

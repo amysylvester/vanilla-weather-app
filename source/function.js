@@ -40,7 +40,7 @@ function displayForecast(response) {
       forecastHTML =
         forecastHTML +
         `
-      <div class="card" id="day-one"> 
+      <div class="card"> 
         <img
           class="future-weather-icons"
           src="https://openweathermap.org/img/wn/${
@@ -55,7 +55,7 @@ function displayForecast(response) {
           )}</strong></h3>
           <div class="card-text">
             ${Math.round(forecastDay.temp.max)}°<br />
-            ${Math.round(forecastDay.temp.min)}°
+            <span id="forecast-min">${Math.round(forecastDay.temp.min)}°</span>
           </div>
         </div>
       </div>
