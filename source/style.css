@@ -84,9 +84,15 @@ h3 {
   padding: 6px 6px 4px 9px;
   width: 75%;
 }
+
 .today {
   color: #212529;
 }
+
+#icon {
+  width: 50%;
+}
+
 .today-weather-elements {
   color: #6e88a1;
   font-size: 20px;
