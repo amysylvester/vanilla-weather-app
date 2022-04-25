@@ -44,12 +44,6 @@ ul {
   list-style: none;
 }
 
-footer {
-  color: #123557;
-  font-size: small;
-  padding: 20px;
-}
-
 div .today-weather {
   margin: auto;
   text-align: center;
@@ -62,6 +56,16 @@ div .today .temp {
 
 h3 {
   font-size: 20px;
+}
+
+footer {
+  color: #123557;
+  font-size: small;
+  padding: 20px;
+}
+
+footer a {
+  color: #123557;
 }
 
 .container {
