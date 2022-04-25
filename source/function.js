@@ -43,9 +43,7 @@ function displayForecast(response) {
       <div class="card"> 
         <img
           class="future-weather-icons"
-          src="https://openweathermap.org/img/wn/${
-            forecastDay.weather[0].icon
-          }@2x.png"
+          src=images/weather/forecast/${forecastDay.weather[0].icon}.svg
           card-img-top
           alt=""
         />
